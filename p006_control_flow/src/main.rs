@@ -1,7 +1,7 @@
 use std::io;
 macro_rules! line {
     () => {
-        println!("=============");
+        println!("============");
     };
 }
 macro_rules! control_flow {
@@ -16,6 +16,7 @@ macro_rules! control_flow {
     };
 }
 fn main() {
+    let mut vector: Vec<i32> = Vec::new();
     let mut count = 0;
     loop {
         count += 1;
@@ -23,15 +24,28 @@ fn main() {
         let mut number = String::new();
         io::stdin().read_line(&mut number).expect("Failed");
         let number: i32 = number.trim().parse().expect("Please enter a number");
+        vector.push(number);
         control_flow!(number);
-        if number % 2 == 0 && number > 0 {
-            println!("Number devided to 2");
-        }
         if count == 5 {
             break;
         }
     }
+    //------------------
     line!();
-    println!("EXIT");
+    for num in vector {
+        if num % 2 == 0 {
+            println!("num & 2: {}", num);
+        }
+    }
+    //------------------
+    line!();
+    let mut flag = true;
+    while flag {
+        println!("Flag: {}", flag);
+        flag = false;
+    }
+    println!("Flag: {}", flag);
+    line!();
+    println!("=== EXIT ===");
     line!();
 }
