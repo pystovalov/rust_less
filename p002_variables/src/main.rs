@@ -25,4 +25,17 @@ fn main() {
     println!("octal = {}", octal);
     println!("binary = {}", binary);
     println!("byte = {}", byte);
+    //---------------------
+    let tupl: (i32, f64, u8) = (500, 3.4, 2);
+    let (x, y, z) = tupl;
+    let one_var = tupl.0;
+    let two_var = tupl.1;
+    let three_var = tupl.2;
+    println!("x:{} = {}:one_var", x, one_var);
+    println!("y:{} = {}:two_var", y, two_var);
+    println!("z:{} = {}:three_var", z, three_var);
+    //-------------------------
+    let arr = [1, 2, 3, 4, 5];
+    println!("index 1: {}", arr[1]);
+    println!("index 4: {}", arr[4]);
 }
