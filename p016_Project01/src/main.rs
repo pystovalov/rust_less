@@ -2,7 +2,7 @@ use std::{
     ffi::os_str::Display,
     fmt::{self, Formatter},
 };
-#[derive(Debug)]
+#[derive(Debug, Clone, Copy)]
 enum Operaton {
     Add,
     Sub,
@@ -10,7 +10,7 @@ enum Operaton {
     Div,
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone, Copy)]
 enum CalcError {
     DivisionByZero,
     UnknownOperation,
@@ -23,7 +23,7 @@ impl fmt::Display for CalcError {
         }
     }
 }
-#[derive(Debug)]
+#[derive(Debug, Clone, Copy)]
 struct Expression {
     left: f64,
     op: Operaton,
@@ -57,4 +57,35 @@ fn main() {
         Expression::new(4.0, Operaton::Mul, 3.4),
         Expression::new(100.0, Operaton::Div, 0.0),
     ];
+
+    println!("Калькулятор: примеры вычислений\n");
+    for expr in expressions {
+        let result = expr.evalute();
+        history.push((expr.clone(), result.clone()));
+        match result {
+            Ok(value) => println!("{} = {}", expr_to_string(&expr), value),
+            Err(e) => println!("{} Ошибка: {}", expr_to_string(&expr), e),
+        }
+    }
+
+    println!("\nИстория (всего записей: {})", history.len());
+    for (i, (expr, res)) in history.iter().enumerate() {
+        println!("[{}] {} -> {:?}", i + 1, expr_to_string(expr), res);
+    }
+
+    let test_char = '*';
+    if SUPPORTED_OPS.contains(&test_char) {
+        println!("\nСимвол '{}' поддерживается", test_char);
+    } else {
+        println!("\nСимвол '{}' не поддерживается", test_char);
+    }
+}
+fn expr_to_string(e: &Expression) -> String {
+    let op_char = match e.op {
+        Operaton::Add => '+',
+        Operaton::Sub => '-',
+        Operaton::Mul => '*',
+        Operaton::Div => '/',
+    };
+    format!("{} {} {}", e.left, op_char, e.right)
 }
