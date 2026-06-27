@@ -22,4 +22,12 @@ fn main() {
     let students_grades: HashMap<_, _> = names.into_iter().zip(grades.into_iter()).collect();
     print_var!(students_grades);
     line!();
+    let grade = students_grades.get("Bob");
+    match grade {
+        Some(g) => println!("Bob grade is {}", g),
+        None => println!("No grade found for Bob"),
+    }
+    line!();
+    println!("Alice grade is{}", students_grades["Alice"]);
+    line!();
 }
