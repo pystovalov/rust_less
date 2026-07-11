@@ -1,0 +1,7 @@
+/home/alexander/code/rust/less/oreilly/p022_logging_libraries/target/debug/deps/termcolor-dd08f2b97f98cc6b.d: /home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/termcolor-1.4.1/src/lib.rs
+
+/home/alexander/code/rust/less/oreilly/p022_logging_libraries/target/debug/deps/libtermcolor-dd08f2b97f98cc6b.rlib: /home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/termcolor-1.4.1/src/lib.rs
+
+/home/alexander/code/rust/less/oreilly/p022_logging_libraries/target/debug/deps/libtermcolor-dd08f2b97f98cc6b.rmeta: /home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/termcolor-1.4.1/src/lib.rs
+
+/home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/termcolor-1.4.1/src/lib.rs:
