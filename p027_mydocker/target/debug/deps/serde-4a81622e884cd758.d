@@ -1,0 +1,12 @@
+/home/alexander/code/rust/less/oreilly/p027_mydocker/target/debug/deps/serde-4a81622e884cd758.d: /home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/alexander/code/rust/less/oreilly/p027_mydocker/target/debug/build/serde-830168119362d6eb/out/private.rs
+
+/home/alexander/code/rust/less/oreilly/p027_mydocker/target/debug/deps/libserde-4a81622e884cd758.rmeta: /home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs /home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs /home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs /home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs /home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs /home/alexander/code/rust/less/oreilly/p027_mydocker/target/debug/build/serde-830168119362d6eb/out/private.rs
+
+/home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs:
+/home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/integer128.rs:
+/home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/mod.rs:
+/home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/de.rs:
+/home/alexander/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/private/ser.rs:
+/home/alexander/code/rust/less/oreilly/p027_mydocker/target/debug/build/serde-830168119362d6eb/out/private.rs:
+
+# env-dep:OUT_DIR=/home/alexander/code/rust/less/oreilly/p027_mydocker/target/debug/build/serde-830168119362d6eb/out

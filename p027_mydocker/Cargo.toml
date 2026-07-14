@@ -1,0 +1,10 @@
+[package]
+name = "p027_mydocker"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bollard = "0.18.1"
+clap = {version="4.5.21",features=["derive"]}
+tokio ={version="1.41.1",features=["full"]}
+futures-util="0.3"

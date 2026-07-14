@@ -1,0 +1,1 @@
+/home/alexander/code/rust/less/oreilly/p027_mydocker/target/debug/p027_mydocker: /home/alexander/code/rust/less/oreilly/p027_mydocker/src/cli.rs /home/alexander/code/rust/less/oreilly/p027_mydocker/src/docker.rs /home/alexander/code/rust/less/oreilly/p027_mydocker/src/main.rs
