@@ -1,0 +1,8 @@
+[package]
+name = "p026_command_line"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap =  {version = "4.5.20",features=["derive"]}
+clap_derive = "4.5.20"
